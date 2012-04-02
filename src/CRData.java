@@ -899,7 +899,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6BUILDING §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6BUILDING ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.BAddLevel(1);
 			}
 			PLXP.BAddXP(expgain);
@@ -911,7 +911,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6COMBAT §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6COMBAT ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.CAddLevel(1);
 			}
 			PLXP.CAddXP(expgain);
@@ -923,7 +923,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6EXCAVATING §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6EXCAVATING ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.EAddLevel(1);
 			}
 			PLXP.EAddXP(expgain);
@@ -935,7 +935,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6FARMING §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6FARMING ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.FAddLevel(1);
 			}
 			PLXP.FAddXP(expgain);
@@ -947,7 +947,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6MINING §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6MINING ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.MAddLevel(1);
 			}
 			PLXP.MAddXP(expgain);
@@ -959,7 +959,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6TECHNICIAN §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6TECHNICIAN ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.TAddLevel(1);
 			}
 			PLXP.TAddXP(expgain);
@@ -971,7 +971,7 @@ public class CRData {
 			levelxp = getBaseExp(Type, xpcheck);
 			if ((exp >= levelxp) && (lvl < maxlevel)){
 				String level = String.valueOf(xpcheck);
-				player.sendMessage("§6WOODCUTTING §bLEVELED UP! Level:§e "+level);
+				player.sendMessage("ï¿½6WOODCUTTING ï¿½bLEVELED UP! Level:ï¿½e "+level);
 				PLXP.WAddLevel(1);
 			}
 			PLXP.WAddXP(expgain);
@@ -1442,7 +1442,7 @@ public class CRData {
 	}
 	
 	public void SaveAll(){
-		etc.getServer().messageAll("[§5SKILLS§f]§d - Saving all LEVELS and EXPERIENCE!");
+		etc.getServer().messageAll("[ï¿½5SKILLSï¿½f]ï¿½d - Saving all LEVELS and EXPERIENCE!");
 		log.info("[CraftingReloaded] - Saving all LEVELS and EXPERIENCE!");
 		CRPlayerLevelExperience PLXP;
 			if(MySQL){
@@ -1500,7 +1500,7 @@ public class CRData {
 				}
 			}
 		UpdateAntiBlockFarm();
-		etc.getServer().messageAll("[§5SKILLS§f]§d - Save Complete!");
+		etc.getServer().messageAll("[ï¿½5SKILLSï¿½f]ï¿½d - Save Complete!");
 		log.info("[CraftingReloaded] - Save Complete!");
 	}
 	
@@ -1586,7 +1586,7 @@ public class CRData {
 		BlockBuf.append(",");
 		BlockBuf.append(block.getZ());
 		BlockBuf.append(",");
-		BlockBuf.append(block.getWorld().getType().getId());
+		BlockBuf.append(block.getWorld().getType().ToIndex());
 		return BlockBuf.toString();
 	}
 	
