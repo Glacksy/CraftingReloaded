@@ -63,20 +63,20 @@ public class CRListener extends PluginListener {
 					}
 				}
 				else{
-					player.sendMessage("§6----[§3CraftingReloaded V"+CR.version+"§6]----");
+					player.sendMessage("ï¿½6----[ï¿½3CraftingReloaded V"+CR.version+"ï¿½6]----");
 					if(player.isAdmin() && !CR.isLatest()){
-						player.sendMessage("§6----[§3There is an update! V"+CR.CurrVer+"§6]----");
+						player.sendMessage("ï¿½6----[ï¿½3There is an update! V"+CR.CurrVer+"ï¿½6]----");
 					}
-					player.sendMessage("§a/skills building§b        - displays §6BUILDING§b level and XP");
-					player.sendMessage("§a/skills combat§b        - displays §6COMBAT§b level and XP");
-					player.sendMessage("§a/skills excavating§b   - displays §6EXCAVATING§b level and XP");
-					player.sendMessage("§a/skills farming§b        - displays §6FARMING§b level and XP");
-					player.sendMessage("§a/skills mining§b          - displays §6MINING§b level");
-					player.sendMessage("§a/skills technician§b    - displays §6TECHNICIAN§b level and XP");
-					player.sendMessage("§a/skills woodcutting§b  - displays §6WOODCUTTING§b level and XP");
-					player.sendMessage("§a/skills all§b              - displays §6ALL§b levels and XP");
-					player.sendMessage("§a/skills total§b           - displays §6TOTAL§b level and XP");
-					player.sendMessage("§aAliases:§e b, c, e, f, m, t, w, a, to");
+					player.sendMessage("ï¿½a/skills buildingï¿½b        - displays ï¿½6BUILDINGï¿½b level and XP");
+					player.sendMessage("ï¿½a/skills combatï¿½b        - displays ï¿½6COMBATï¿½b level and XP");
+					player.sendMessage("ï¿½a/skills excavatingï¿½b   - displays ï¿½6EXCAVATINGï¿½b level and XP");
+					player.sendMessage("ï¿½a/skills farmingï¿½b        - displays ï¿½6FARMINGï¿½b level and XP");
+					player.sendMessage("ï¿½a/skills miningï¿½b          - displays ï¿½6MININGï¿½b level");
+					player.sendMessage("ï¿½a/skills technicianï¿½b    - displays ï¿½6TECHNICIANï¿½b level and XP");
+					player.sendMessage("ï¿½a/skills woodcuttingï¿½b  - displays ï¿½6WOODCUTTINGï¿½b level and XP");
+					player.sendMessage("ï¿½a/skills allï¿½b              - displays ï¿½6ALLï¿½b levels and XP");
+					player.sendMessage("ï¿½a/skills totalï¿½b           - displays ï¿½6TOTALï¿½b level and XP");
+					player.sendMessage("ï¿½aAliases:ï¿½e b, c, e, f, m, t, w, a, to");
 					return true;
 				}
 			}
@@ -321,8 +321,8 @@ public class CRListener extends PluginListener {
 				protect = true;
 			}
 		}
-		if(Cuboids2 != null && Cuboids2.isEnabled()){
-			if(!(Boolean)etc.getLoader().callCustomHook("CuboidAPI", new Object[] {player, block, "CAN_MODIFY"})){
+		if(Cuboids2 != null && Cuboids2.isEnabled()){	
+if(!(Boolean)etc.getLoader().callCustomHook(â€œCuboidAPIâ€œ, new Object[] {â€œCAN_MODIFYâ€, Playername, Block})){
 				protect = true;
 			}
 		}
